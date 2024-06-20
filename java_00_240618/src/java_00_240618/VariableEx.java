@@ -94,7 +94,7 @@ public class VariableEx {
 		ageResult = curAge + varNum;
 		
 		System.out.println(" 올해는 [" + curYear + "] 년도 입니다.");
-		System.out.println(" 올해 내 나이는 [" + curAge + "]세 입니다.");
+		System.out.println(" 올해 내 나이는 [" + curAge + "]세 입니다");
 		System.out.println(" 다음해는 [" + yearResult + "] 년도 입니다.");
 		System.out.println(" 다음 내 나이는 [" + ageResult + "]세 입니다.");
 		
