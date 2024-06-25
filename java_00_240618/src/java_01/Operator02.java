@@ -1,4 +1,4 @@
-package java_00_240618; 
+package java_01; 
 
 public class Operator02 {
 	public static void main(String[] args) {
