@@ -36,8 +36,8 @@ public class CalcAvgEx {
 		while (flag) {
 			num = getNum();
 			result = result + num;
-			
 
+			
 			if (num == 0) {
 				flag = false;
 				continue;
@@ -48,16 +48,13 @@ public class CalcAvgEx {
 			} else {
 				calcStr = calcStr + " + " + num;
 			}
-
+			
+			Cont++;
 			System.out.println(calcStr);
 		}	
 		
-
-		Cont++;
-		
 		average = result / Cont;
-		
-
+			
 		// 입력 받은 숫자들의 합을 보여줄 수 있는 출력문 작성
 		System.out.println(calcStr + " = " + average);
 	}
