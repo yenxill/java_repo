@@ -8,6 +8,11 @@ public class Truck extends Car {
 		
 	}
 	
+	public Truck(String arg1, int arg2, int arg3, String arg4, double arg5) {
+		super(arg1, arg2, arg3, arg4);
+		this.weight = arg5;
+	}
+	
 	public String carInfo() {
 		String result = "";
 
