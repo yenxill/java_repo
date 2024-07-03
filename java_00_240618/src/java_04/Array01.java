@@ -9,9 +9,9 @@ public class Array01 {
 		 */
 
 		arrayEx01();
-//		arrayEx02();
-//		arrayEx03();
-//		arrayEx04();
+		arrayEx02();
+		arrayEx03();
+		arrayEx04();
 		arrayEx05();
 		arrayEx06();
 	}
