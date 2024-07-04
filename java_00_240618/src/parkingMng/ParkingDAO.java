@@ -40,14 +40,22 @@ public class ParkingDAO {
 		
 	}
 
-	public void deleteParking(String location) {
-		for(int i=0; i<parkingNum.length; i++) {
-			for(int j=0; j<parkingNum[i].length; j++) {
-				if(location.equals(parkingNum[i][j])) {
-					parkingNum[i][j] = null;
-				} 
+	public boolean deleteParking(String location) {
+		
+		boolean flag = true;
+		
+		for (int i=0; i<parkingNum.length; i++) {
+			for (int j=0; j<parkingNum[i].length; j++) {
+				if (location.equals(parkingNum[i][j]) && parkingSpace[i][j] != null) {
+					parkingSpace[i][j] = null;
+					return true;
+				} else {
+					flag = false;
+				}
 			}
 		}
+		
+		return flag;
 	}
 
 	public String[][] selectParking() {
