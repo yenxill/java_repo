@@ -1,6 +1,7 @@
 package java_10;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -41,5 +42,18 @@ public class MapCollection {
 			}
 			System.out.println("입력하신 지역번호에 대한 지역은 : " + regionNum.get(num));
 		}
+		
+		Iterator<String> keyIt = regionNum.keySet().iterator();
+		
+		while (keyIt.hasNext()) {
+			String regNum = keyIt.next();
+			
+			if("02".equals(regNum)) {
+				
+			}
+
+			System.out.println(regionNum.get(regNum));
+		}
+		
 	}
 }
